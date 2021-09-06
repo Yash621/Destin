@@ -7,6 +7,9 @@ import { API_KEY } from "@env";
 import { useNavigation } from "@react-navigation/core";
 import { useDispatch } from "react-redux";
 import { setDestination } from "../slices/navSlice";
+import { Icon } from "react-native-elements/dist/icons/Icon";
+import { TouchableOpacity } from "react-native-gesture-handler";
+import NavFavourites from "./NavFavourites";
 
 const NavigateCard = () => {
   const dispatch = useDispatch();
@@ -14,7 +17,7 @@ const NavigateCard = () => {
 
   return (
     <SafeAreaView style={tw`bg-white`}>
-      <Text style={tw`text-center py-5 text-xl`}>Helu Friend</Text>
+      <Text style={tw`text-center py-2 text-xl`}>Helu Friend</Text>
       <View style={tw`border-t border-gray-200 flex-shrink`}>
         <View>
           <GooglePlacesAutocomplete
@@ -42,6 +45,7 @@ const NavigateCard = () => {
             debounce={400}
           />
         </View>
+        <NavFavourites />
       </View>
       <View
         style={tw`flex-row bg-white justify-evenly py-2 mt-auto border-t border-gray-100 `}
@@ -54,7 +58,7 @@ const NavigateCard = () => {
           <Text style={tw`text-white text-center`}>Rides</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          style={tw`flex flex-row bg-black w-24 px-4 py-3 rounded-full justify-between`}
+          style={tw`flex flex-row  w-24 px-4 py-3 rounded-full justify-between`}
         >
           <Icon
             name="fast-food-outline"
@@ -62,7 +66,7 @@ const NavigateCard = () => {
             color="black"
             size={16}
           />
-          <Text style={tw`text-white text-center`}>Eats</Text>
+          <Text style={tw` text-center`}>Eats</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
