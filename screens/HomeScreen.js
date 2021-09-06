@@ -6,6 +6,7 @@ import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplet
 import { API_KEY } from "@env";
 import { useDispatch } from "react-redux";
 import { setOrigin, setDestination } from "../slices/navSlice";
+import { useNavigation } from "@react-navigation/core";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -25,6 +26,7 @@ const HomeScreen = () => {
         />
 
         <GooglePlacesAutocomplete
+          enablePoweredByContainer={false}
           placeholder="Where From?"
           styles={{
             container: {
@@ -44,6 +46,8 @@ const HomeScreen = () => {
             dispatch(setDestination(null));
           }}
           fetchDetails={true}
+          returnKeyType={"search"}
+          minLength={2}
           enablePoweredByContainer={false}
           minLength={2}
           query={{
