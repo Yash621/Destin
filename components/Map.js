@@ -24,21 +24,18 @@ const Map = () => {
     mapRef.current.fitToSuppliedMarkers(["origin", "destination"], {
       edgePadding: { to: 50, right: 50, bottom: 50, left: 50 },
     });
-  }, [origin, destination]);
-
-  useEffect(() => {
-    if (!origin || !destination) {
-      return;
-    }
     const getTravelTime = async () => {
       fetch(
         `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${origin.description}&destinations=${destination.description}&key=${API_KEY}`
       )
-        .then((res) => res.json)
+        .then((res) => res.json())
         .then((data) => {
+          console.log(data);
           dispatch(setTravelTimeInformation(data.rows[0].elements[0]));
+          console.log("B,FL");
         });
     };
+    getTravelTime();
   }, [origin, destination, API_KEY]);
 
   return (

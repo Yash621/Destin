@@ -30,7 +30,7 @@ const data = [
   },
 ];
 
-// const SURGE_CHARGE_RATE=
+const SURGE_CHARGE_RATE = 1.5;
 
 const RideOptionsCard = () => {
   const navigation = useNavigation();
@@ -42,12 +42,12 @@ const RideOptionsCard = () => {
       <View>
         <TouchableOpacity
           onPress={() => navigation.navigate("NavigateCard")}
-          style={tw`absolute top-3 left-5 z-50 p-3 rounded-full`}
+          style={tw`absolute top-3 left-5 z-40 p-3 rounded-full`}
         >
           <Icon name="chevron-left" type="font-awesome" />
         </TouchableOpacity>
         <Text style={tw`text-center py-1 text-xl`}>
-          Select a Ride -{travelTimeInformation?.distance.text}{" "}
+          Select a Ride -{travelTimeInformation?.distance?.text}{" "}
         </Text>
       </View>
 
@@ -71,9 +71,15 @@ const RideOptionsCard = () => {
             />
             <View style={tw`-ml-6`}>
               <Text style={tw`text-xl font-semibold`}>{title}</Text>
-              <Text>{travelTimeInformation?.duration.text}</Text>
+              <Text>{travelTimeInformation?.duration?.text}</Text>
             </View>
-            <Text style={tw`text-xl`}>$99</Text>
+            <Text style={tw`text-xl`}>
+              ₹
+              {(travelTimeInformation?.duration?.value *
+                SURGE_CHARGE_RATE *
+                multiplier) /
+                100}
+            </Text>
           </TouchableOpacity>
         )}
       />

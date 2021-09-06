@@ -1,6 +1,10 @@
+import { useNavigation } from "@react-navigation/core";
 import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { Icon } from "react-native-elements/dist/icons/Icon";
+import { TouchableOpacity } from "react-native-gesture-handler";
+import { SafeAreaView } from "react-native-safe-area-context";
 import tw from "tailwind-react-native-classnames";
 import Map from "../components/Map";
 import NavigateCard from "../components/NavigateCard";
@@ -8,6 +12,7 @@ import RideOptionsCard from "../components/RideOptionsCard";
 
 const MapScreen = () => {
   const Stack = createStackNavigator();
+  const navigation = useNavigation();
 
   return (
     <View>
@@ -38,4 +43,8 @@ const MapScreen = () => {
 
 export default MapScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "white",
+  },
+});
