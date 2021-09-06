@@ -12,6 +12,7 @@ const data = [
     image: "https://links.papareact.com/3pn",
     title: "Get a Ride",
     screen: "MapScreen",
+    id: "1",
   },
 
   {
@@ -19,6 +20,7 @@ const data = [
     image: "https://links.papareact.com/28w",
     title: "order food",
     screen: "EatsScreen",
+    id: "2",
   },
 ];
 
@@ -30,6 +32,7 @@ const NavOptions = () => {
     <FlatList
       data={data}
       horizontal
+      keyExtractor={(item) => item.id}
       renderItem={({ item }) => (
         <TouchableOpacity
           onPress={() => navigation.navigate(item.screen)}

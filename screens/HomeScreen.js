@@ -7,6 +7,7 @@ import { API_KEY } from "@env";
 import { useDispatch } from "react-redux";
 import { setOrigin, setDestination } from "../slices/navSlice";
 import { useNavigation } from "@react-navigation/core";
+import NavFavourites from "../components/NavFavourites";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -43,6 +44,7 @@ const HomeScreen = () => {
                 description: data.description,
               })
             );
+            console.log(data.description);
             dispatch(setDestination(null));
           }}
           fetchDetails={true}
@@ -57,8 +59,8 @@ const HomeScreen = () => {
           nearbyPlacesAPI="GooglePlacesSearch"
           debounce={400}
         />
-
         <NavOptions />
+        <NavFavourites />
       </View>
     </SafeAreaView>
   );
