@@ -13,3 +13,4 @@ The users can :
 -A map feature is also integrated with the app where users can see the real time pathway from their current location to the destination where they want to navigate   to.
 
 ![alt text](https://github.com/Yash621/Destin/blob/master/assets/Screenshot_2021-09-27_11-50-01%20(1).png)
+![alt text](https://github.com/Yash621/Destin/blob/master/assets/Screenshot_2021-09-27_11-50-24.png)
