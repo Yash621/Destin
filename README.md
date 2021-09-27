@@ -16,10 +16,3 @@ The users can :
  
   ![alt-text-1](https://github.com/Yash621/Destin/blob/master/assets/Screenshot_2021-09-27_11-50-53.png "title-1") ![alt-text-2](https://github.com/Yash621/Destin/blob/master/assets/Screenshot_2021-09-27_11-51-09.png "title-2")
  
- ![alt text](https://github.com/Yash621/Destin/blob/master/assets/Screenshot_2021-09-27_11-50-01%20(1).png)  
- 
- ![alt text](https://github.com/Yash621/Destin/blob/master/assets/Screenshot_2021-09-27_11-50-24.png)
- 
- ![alt text](https://github.com/Yash621/Destin/blob/master/assets/Screenshot_2021-09-27_11-50-53.png)
- 
- ![alt text](https://github.com/Yash621/Destin/blob/master/assets/Screenshot_2021-09-27_11-51-09.png)
