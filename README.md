@@ -4,7 +4,7 @@ This is a web app built using React native and GCP API's for allowing users to b
 
 The users can :
 
-* Find the cabs neaby.
+* Find the cabs nearby.
 
 * Compare fairs of different cabs.
 
