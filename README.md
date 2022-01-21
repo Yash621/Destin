@@ -17,3 +17,25 @@ The users can :
  
   ![alt-text-1](https://github.com/Yash621/Destin/blob/master/assets/Screenshot_2021-09-27_11-50-53.png "title-1") ![alt-text-2](https://github.com/Yash621/Destin/blob/master/assets/Screenshot_2021-09-27_11-51-09.png "title-2")
  
+## Guide for running the project locally
+
+First you need to install the required dependencies by:
+
+### `yarn`
+
+Then open your terminal and enter the given command:
+
+### `expo start`
+
+This will run the app in the development mode. 
+
+Open [http://localhost:19002](http://localhost:19002) to view it in the browser.
+
+Then Scan the QR code appeared with Expo Go (Android) or the Camera app (iOS)
+
+## Note : if you use an android device and don't have Expo Go app ,then go and download it from playstore first.
+
+
+
+
+
