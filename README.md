@@ -33,7 +33,7 @@ Open [http://localhost:19002](http://localhost:19002) to view it in the browser.
 
 Then Scan the QR code appeared with Expo Go (Android) or the Camera app (iOS)
 
-## Note : if you use an android device and don't have Expo Go app ,then go and download it from playstore first.
+### Note : if you use an android device and don't have Expo Go app ,then go and download it from playstore first.
 
 
 
