@@ -25,7 +25,6 @@ const HomeScreen = () => {
             uri: "https://logos.textgiraffe.com/logos/logo-name/Destin-designstyle-smoothie-m.png",
           }}
         />
-
         <GooglePlacesAutocomplete
           enablePoweredByContainer={false}
           placeholder="Where From?"
@@ -44,13 +43,11 @@ const HomeScreen = () => {
                 description: data.description,
               })
             );
-            console.log(data.description);
             dispatch(setDestination(null));
           }}
           fetchDetails={true}
           returnKeyType={"search"}
           minLength={2}
-          enablePoweredByContainer={false}
           minLength={2}
           query={{
             key: API_KEY,

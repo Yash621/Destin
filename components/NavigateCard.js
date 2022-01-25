@@ -35,7 +35,6 @@ const NavigateCard = () => {
                   description: data.description,
                 })
               );
-              console.log(data.description);
               navigation.navigate("RideOptionsCard");
             }}
             fetchDetails={true}

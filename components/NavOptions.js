@@ -8,7 +8,6 @@ import { selectOrigin } from "../slices/navSlice";
 
 const data = [
   {
-    title: "jdfsakj",
     image: "https://links.papareact.com/3pn",
     title: "Get a Ride",
     screen: "MapScreen",
@@ -16,7 +15,6 @@ const data = [
   },
 
   {
-    title: "jdfsakj",
     image: "https://links.papareact.com/28w",
     title: "order food",
     screen: "EatsScreen",
