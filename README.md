@@ -46,6 +46,8 @@ Then Scan the QR code appeared with Expo Go (Android) or the Camera app (iOS)
 
 Made with :heart: by <a href="https://github.com/Yash621" target="_blank">Yash Goel</a>
 
+&#xa0;
+
 <a href="#top">Back to top</a>
 
 
