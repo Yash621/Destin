@@ -43,6 +43,7 @@ Then Scan the QR code appeared with Expo Go (Android) or the Camera app (iOS)
 #### Note : if you use an android device and don't have Expo Go app ,then go and download it from playstore first.
 
 
+
 Made with :heart: by <a href="https://github.com/Yash621" target="_blank">Yash Goel</a>
 
 <a href="#top">Back to top</a>
